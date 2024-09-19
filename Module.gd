@@ -4,7 +4,7 @@ func _init():
     id = "testPrint.CanInBad"
     author = "CanInBad"
     # events = [
-    #     "res://Modules/TestPrintStuff/printAllDollsState.gd"
+    #     "res://Modules/PartOrientPicker/printAllDollsState.gd"
     # ]
     Console.addCommand("printAllDolls",self,"printDolls",[],"Print all dolls")
 
