@@ -22,12 +22,12 @@ func _ready():
 
 	if theNode is BaseStageScene3D:
 		if theNode.getVarOptions().has("flipNPC"):
-			print("### THIS SCENE HAS flipNPC!!!")
+			# print("### THIS SCENE HAS flipNPC!!!")
 			yield(get_tree(), "idle_frame") # I sure hope no one notices this and this is a bad code. At the same time if I were to make ALL BaseStageScene3D store playAnimation() aruguments, it would take more space. Atleast that's what I think. - CanInBad
 			flipped = theDoll.get_scale().x == -1
-			print(theDoll.savedCharacterID)
+			# print(theDoll.savedCharacterID)
 			
-	print(flipped)
+	# print(flipped)
 	if (invert):
 		setValue(!flipped)
 	else:
