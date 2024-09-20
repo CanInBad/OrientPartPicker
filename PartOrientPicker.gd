@@ -36,15 +36,15 @@ func _ready():
 func setValue(value):
 	# _callcount+=1
 	# print("setValue call count "+ str(_callcount))
-	var PartOrient = load("res://Modules/TestPrintStuff/PartOrient.gd")
+	var PartOrient = load("res://Modules/PartOrientPicker/PartOrient.gd")
 	# var _foundSomething = false
 	for child in get_children():
 		if child is PartOrient:
 			if child.getOrient() == value:
-				child.show()
+				child.visible = true
 				# _foundSomething = true
 			else:
-				child.hide()
+				child.visible = false
 	
 	# if !foundSomething:
 	# 	for child in get_children():
