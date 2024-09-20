@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Modules/TestPrintStuff/PartOrientPicker.gd" type="Script" id=1]
+[ext_resource path="res://Modules/PartOrientPicker/PartOrientPicker.gd" type="Script" id=1]
 
 [node name="PartOrientPicker" type="Spatial"]
 script = ExtResource( 1 )
