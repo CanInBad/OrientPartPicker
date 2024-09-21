@@ -3,10 +3,13 @@ extends Module
 func _init():
     id = "testPrint.CanInBad"
     author = "CanInBad"
-    # events = [
-    #     "res://Modules/PartOrientPicker/printAllDollsState.gd"
-    # ]
-    Console.addCommand("printAllDolls",self,"printDolls",[],"Print all dolls")
+    scenes = [
+        "res://Modules/PartOrientPicker/testing/testScene.gd"
+    ]
+    items = [
+        "res://Modules/PartOrientPicker/testing/stuffToTestOn/CasualClothesEdit.gd"
+    ]
+    # Console.addCommand("printAllDolls",self,"printDolls",[],"Print all dolls")
 
 const toCheck:Array = ["Doll3D","Doll3D2", "Doll3D3", "Doll3D4"]
 
