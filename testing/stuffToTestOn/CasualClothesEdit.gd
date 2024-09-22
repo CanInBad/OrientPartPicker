@@ -1,7 +1,7 @@
 extends ItemBase
 
 func _init():
-	id = "CasualClothesEdit"
+	id = "LRTestingOrientation"
 
 func getVisibleName():
 	return "LR"
